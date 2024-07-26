@@ -4,7 +4,7 @@ const reverseString = function(input) {
 
     //do stuff to output string
     for(let i = 0; i < input.length; i++){
-        output += input.at(i);
+        output += input.at(input.length - (i + 1));
     }
 
     //return output string
