@@ -3,12 +3,12 @@ const removeFromArray = function(inputArray, ...severalArguments) { //take input
     //create an output array
     let outputList = [];
     //for each object in the array input
-    for(let i = 0; i < inputArray.length; i++){
+    for(let inputIndex = 0; inputIndex < inputArray.length; inputIndex++){
         //create variable to store whether or not it is a match, default false
         let isMatch = false;
         //check against each object in the parameter list
         //for each object in noGoList
-        
+        for(let argIndex = 0; argIndex < severalArguments.length; argIndex++)
         
                 //is it a match?
                     // yes - set match variable to true
@@ -16,7 +16,7 @@ const removeFromArray = function(inputArray, ...severalArguments) { //take input
         //if match variable false copy into the output array
         
         if(!isMatch){
-            outputList.push(inputArray[i]);
+            outputList.push(inputArray[inputIndex]);
         }    
     }
         
