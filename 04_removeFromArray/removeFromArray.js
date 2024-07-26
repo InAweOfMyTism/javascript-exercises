@@ -1,12 +1,16 @@
-const removeFromArray = function() { //take inputs array and one or more objects
-    //create an array of all objects taken as param EXCLUDING the array
-    const nogoList = []; 
+const removeFromArray = function(inputArray, ...severalArguments) { //take inputs array and one or more objects
+     
     //create an output array
     let outputList = [];
     //for each object in the array parameter
-    for(const i in arguments[0]){
+    for(const inputObject in arguments[0]){
+        //create variable to store whether or not it is a match default false
         //check against each object in the parameter list
-        //if cleared against the list copy into the output array
+            //for each object in noGoList
+                //is it a match?
+                    // yes - set match variable to true
+                    // no - do nothing    
+        //if match variable false copy into the output array
     }
         
     //return the output array
