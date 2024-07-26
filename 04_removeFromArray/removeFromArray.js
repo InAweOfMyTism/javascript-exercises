@@ -8,11 +8,14 @@ const removeFromArray = function(inputArray, ...severalArguments) { //take input
         let isMatch = false;
         //check against each object in the parameter list
         //for each object in noGoList
-        for(let argIndex = 0; argIndex < severalArguments.length; argIndex++)
-        
-                //is it a match?
-                    // yes - set match variable to true
-                    // no - do nothing
+        for(let argIndex = 0; argIndex < severalArguments.length; argIndex++){
+            if(inputArray[inputIndex] == severalArguments[argIndex]){
+                isMatch = true;
+            }
+        }
+        //is it a match?
+            // yes - set match variable to true
+            // no - do nothing
         //if match variable false copy into the output array
         
         if(!isMatch){
