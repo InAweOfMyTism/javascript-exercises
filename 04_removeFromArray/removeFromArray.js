@@ -9,7 +9,7 @@ const removeFromArray = function(inputArray, ...severalArguments) { //take input
         //check against each object in the parameter list
         //for each object in noGoList
         for(let argIndex = 0; argIndex < severalArguments.length; argIndex++){
-            if(inputArray[inputIndex] == severalArguments[argIndex]){
+            if(inputArray[inputIndex] === severalArguments[argIndex]){
                 isMatch = true;
             }
         }
